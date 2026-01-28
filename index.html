@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Portfolio Data Analyst | Salsabila</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PROFILE -->
+    <section class="profile">
+      <img src="Foto.jpg.png" alt="Foto profil Salsabila Putri Halimi - Data Analyst" class="profile-img" />
+
+      <h1>Salsabila Putri Halimi</h1>
+      <p class="role">
+        <span id="typing"></span>
+      </p>
+
+      <p class="about">
+        Mahasiswa Data Science yang fokus pada data analysis, data science, dan data engineer. Terbiasa mengolah dan menyajikan data menggunakan SQL, Excel, Python, dan dashboard visualisasi. Memiliki soft skill komunikasi, ketelitian, dan
+        problem solving, serta siap memberikan kontribusi nyata dalam mendukung kebutuhan data dan keputusan bisnis.
+      </p>
+
+      <div class="social">
+        <a href="https://github.com/putrihalimi" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/salsabila-putri-halimi" target="_blank">LinkedIn</a>
+        <a href="mailto:halimisalsabilaputri@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+
+      <div class="portfolio-grid">
+        <a href="https://www.canva.com/design/DAG_GdhlZ2I/qjYPYw8nAw_iiwYSCL2Ohg/edit?utm_content=DAG_GdhlZ2I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card" target="_blank">
+          <h3>FMCGG Transaction Data Analysis</h3>
+          <p class="subtitle">Mengoptimalkan Strategi Penjualan Operasional</p>
+          <p class="tech">SQLite • Looker Studio • Excel</p>
+        </a>
+
+        <a href="https://www.canva.com/design/DAGTJFv_BS0/AfPEriPFgN_KBqudthjQJQ/edit?utm_content=DAGTJFv_BS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card" target="_blank">
+          <h3>Customer Relationship Management (CRM)</h3>
+          <p class="subtitle">Meningkatkan pengalaman pelanggan secara keseluruhan</p>
+          <p class="tech">JOIN • CTE • Window Function</p>
+        </a>
+
+        <a href="https://lookerstudio.google.com/reporting/5dc632bb-d6d5-4f56-81c8-f0ff27512780" class="card" target="_blank">
+          <h3>Warmindo Sales Forecasting (Time Series)</h3>
+          <p>Mengidentifikasi total penjualan dan pemasukan</p>
+          <p class="tech">Spreadsheet • Looker Studio • Visualization</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- TYPING EFFECT -->
+    <script>
+      const texts = ["Data Analyst", "Data Entry", "Data Management", "Data Support"];
+
+      let count = 0;
+      let index = 0;
+
+      function typeEffect() {
+        const currentText = texts[count];
+        document.getElementById("typing").textContent = currentText.slice(0, ++index);
+
+        if (index === currentText.length) {
+          setTimeout(() => {
+            index = 0;
+            count = (count + 1) % texts.length;
+          }, 1500);
+        }
+
+        setTimeout(typeEffect, 120);
+      }
+
+      typeEffect();
+    </script>
+  </body>
+</html>
