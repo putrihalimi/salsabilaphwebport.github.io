@@ -1,3 +1,18 @@
+<script>
+function toggleText() {
+  var moreText = document.getElementById("moreText");
+  var btn = document.getElementById("btnShow");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    btn.innerHTML = "Show Less";
+  } else {
+    moreText.style.display = "none";
+    btn.innerHTML = "Show More";
+  }
+}
+</script>
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
