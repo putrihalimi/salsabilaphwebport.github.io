@@ -34,24 +34,6 @@ body {
   line-height: 1.6;
 }
 
-#moreText {
-  display: none;
-}
-
-button {
-  margin-top: 10px;
-  padding: 8px 15px;
-  border: none;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #555;
-}
-
 .social a {
   margin: 0 10px;
   text-decoration: none;
